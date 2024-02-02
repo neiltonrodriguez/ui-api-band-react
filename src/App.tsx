@@ -1,14 +1,21 @@
-import './App.css'
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import HomePage from "./pages/home";
+import LoginPage from "./pages/login";
 
 function App() {
   return (
-    <>
-      
-      <h1 className="text-red-700 text-2xl">Vite + React</h1>
-      
-      
-    </>
-  )
+    <div className="w-full max-w-4xl flex flex-col items-center justify-center m-auto p-2">
+      <div>
+        <h1 className="text-2xl text-slate-800 font-bold">GitHub Search</h1>
+      </div>
+      <Router>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/login" element={<LoginPage />} />
+        </Routes>
+      </Router>
+    </div>
+  );
 }
 
-export default App
+export default App;

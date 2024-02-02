@@ -8,6 +8,7 @@ se quiser, pode clonar o repositório da api e rodar com docker.
 ### Contexto de negócio
 ```
 React
+Typescript
 Axios
 TailwindCSS
 ```
