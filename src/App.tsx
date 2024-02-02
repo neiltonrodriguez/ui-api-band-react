@@ -1,13 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import HomePage from "./pages/home";
+import HomePage from "./pages/dashboard";
 import LoginPage from "./pages/login";
 
 function App() {
   return (
-    <div className="w-full max-w-4xl flex flex-col items-center justify-center m-auto p-2">
-      <div>
-        <h1 className="text-2xl text-slate-800 font-bold">GitHub Search</h1>
-      </div>
+    <div className="w-full h-auto bg-slate-100">
       <Router>
         <Routes>
           <Route path="/" element={<HomePage />} />
