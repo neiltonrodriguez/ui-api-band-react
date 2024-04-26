@@ -1,9 +1,9 @@
-export default function HomePage() {
+export const Login = () => {
   
   return (
-    <div className="">
+    <div>
       <p className="text-black text-4xl font-bold text-center">
-        Dashboard
+        Login
       </p>
       
     </div>
