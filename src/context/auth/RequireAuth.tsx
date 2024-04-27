@@ -5,7 +5,7 @@ import { Login } from "../../pages";
 export const RequireAuth = ({children}: { children: JSX.Element}) => {
     const auth = useContext(AuthContext);
 
-    if(!auth.usuario){
+    if(!auth.user){
         return <Login />
     }
     return children;

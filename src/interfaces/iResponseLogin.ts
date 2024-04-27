@@ -1,12 +1,15 @@
   export interface iResponseLogin {
-    refresh: string;
-    access: string;
-    usuario: Usuario[];
+    access_token: string;
+    usuario: User;
   }
-  export interface Usuario {
-    nomecompleto: string;
-    foto: string;
+  export interface User {
+    id: number;
+    first_name: string;
+    last_name: string;
     email: string;
-    tipo: number;
-    conta: string;
+    profile_id: number;
+    instrument: string;
+    is_active: number;
+    created_at?: any;
+    updated_at?: any;
   }

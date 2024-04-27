@@ -1,6 +1,11 @@
 export type User = {
-    conta: string;
-    nomecompleto: string;
+    id: number;
+    first_name: string;
+    last_name: string;
     email: string;
-    tipo: number;
+    profile_id: number;
+    instrument: string;
+    is_active: number;
+    created_at?: any;
+    updated_at?: any;
 }

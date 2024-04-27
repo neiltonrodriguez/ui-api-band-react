@@ -4,25 +4,23 @@ import { User } from "../../types"
 import { LoginService } from "../../services/api/LoginService/LoginService"
 
 export const AuthProvider = ({children}: {children: JSX.Element }) => {
-    const [usuario, setUsuario] = useState<User | null>(null)
+    const [user, setUser] = useState<User | null>(null)
 
-    const signin = async (username: string, password: string) => {
-       const data = await LoginService.login(username, password)
-       if(data.usuario && data.access){
-        
-        setUsuario(data.usuario[0])
+    const signin = async (email: string, password: string) => {
+       const data = await LoginService.login(email, password)
+       if(data.user && data.access_token){
+        setUser(data.user)
        }
-
        return data;
 
     }
     const signout = async () => {
         const data = await LoginService.logout()
         console.log(data)
-        setUsuario(null)
+        setUser(null)
     }
     return (
-        <AuthContext.Provider value={{usuario, signin, signout}}>
+        <AuthContext.Provider value={{user, signin, signout}}>
             {children}
         </AuthContext.Provider>
     )

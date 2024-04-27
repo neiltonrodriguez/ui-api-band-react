@@ -1,9 +1,9 @@
 import { Api } from "../Api";
 import { ApiException } from "../ApiException";
 
-const login = async (username: string, password: string) => {
+const login = async (email: string, password: string) => {
     try {
-        const { data } = await Api().post('/login/', {username, password});
+        const { data } = await Api().post('/login', {email, password});
         return data;
     } catch (error: any) {
         return new ApiException(error.message || 'Error ao criar registro na Api')
