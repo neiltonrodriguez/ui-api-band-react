@@ -5,8 +5,11 @@ export const Dashboard = () => {
   return (
     <div className="bg-slate-100 h-screen">
       <NavBar />
-      <div className="bg-white w-full max-w-7xl m-auto mt-10 rounded-lg h-96">
-      <Outlet />
+      <div className="w-full max-w-7xl m-auto mt-10 p-3">
+        <div className="bg-white rounded-lg h-96">
+        <Outlet />
+        </div>
+      
       </div>
     </div>
   );
