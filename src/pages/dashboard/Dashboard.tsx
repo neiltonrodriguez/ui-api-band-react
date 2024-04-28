@@ -1,13 +1,19 @@
-export const Dashboard = () => {
-  
-  return (
-    <div>
+import { Outlet } from "react-router-dom";
+import NavBar from "../../components/NavBar";
 
-      <p className="text-black text-4xl font-bold text-center">
-        Dashboard
-      </p>
+
+export const Dashboard = () => {
+
+  return (
+    <div className="bg-slate-100 h-screen">
+      <NavBar />
+      <div className="bg-white w-full max-w-7xl m-auto mt-10 rounded-lg h-96">
+      <Outlet />
+      </div>
       
-      
+
+
+
     </div>
   );
 }
