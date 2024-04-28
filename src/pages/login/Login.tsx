@@ -18,7 +18,7 @@ export const Login = () => {
   }
 
   return (
-    <div className="bg-gray-600 flex w-full h-screen items-center justify-center">
+    <div className="bg-purple-950 flex w-full h-screen items-center justify-center">
       <div className="flex rounded-lg w-96 h-48 m-auto bg-slate-100 flex-col gap-5 p-5 items-center justify-center">
         <div className="flex">
           <label className="mx-2">Email:</label>

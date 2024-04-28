@@ -3,6 +3,8 @@ import { AuthContext } from "./AuthContext"
 import { User } from "../../types"
 import { LoginService } from "../../services/api/LoginService/LoginService"
 
+
+
 export const AuthProvider = ({children}: {children: JSX.Element }) => {
     const [user, setUser] = useState<User | null>(null)
 

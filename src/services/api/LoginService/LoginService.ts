@@ -10,9 +10,9 @@ const login = async (email: string, password: string) => {
     }
 
 };
-const logout = async () => {
+const logout = () => {
     try {
-        const { data } = await Api.post('/logout');
+        const data  = Api.post('/logout');
         return data;
     } catch (error: any) {
         return new ApiException(error.message || 'Error ao fazer logout na Api')
@@ -21,7 +21,7 @@ const logout = async () => {
 };
 const check = async () => {
     try {
-        const { data } = await Api.post('/me');
+        const { data }  = await Api.post('/me');
         return data;
     } catch (error: any) {
         return new ApiException(error.message || 'Error ao checkar token na Api')

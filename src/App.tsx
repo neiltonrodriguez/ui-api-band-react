@@ -27,7 +27,6 @@ export const App = () => {
         <div className="flex items-center justify-center">
         <p>Seja bem vindor Sr(a): {auth.user?.first_name}</p>
         </div>
-      
         <Outlet />
       </div>
     </div>
