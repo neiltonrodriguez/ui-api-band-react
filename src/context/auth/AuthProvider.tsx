@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { AuthContext } from "./AuthContext"
 import { User } from "../../types"
-import { LoginService } from "../../services/api/LoginService/LoginService"
+import { LoginService } from "../../services/api/login/LoginService"
 
 
 

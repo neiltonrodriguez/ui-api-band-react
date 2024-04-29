@@ -1,3 +1,3 @@
 export * from './iLogin';
-export * from './iTarefas'
+export * from './iGroup'
 export * from './iResponseLogin'
